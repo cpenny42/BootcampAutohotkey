@@ -1,5 +1,5 @@
 ;#############################################################################;
-;    mac_bootcamp.ahk
+;    BootcampAutohotkey.ahk
 ;
 ;    This file rearranges default windows commands to work naturally with 
 ;    the mac keyboard and behaviors from OS X.
