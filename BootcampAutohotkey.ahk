@@ -23,6 +23,7 @@ WheelDown::
 ;	
 LWin::LCtrl
 LCtrl::LWin
+RWin::RCtrl
 return
 
 ;	Send Alt-F4 with Command-q
