@@ -40,8 +40,9 @@ if (INVERT_SCROLLING = "yes") {
 ;###############################;
 if (SWAP_CONTROL_COMMAND = "yes") {
     LWin::LCtrl
-    RWin::RCtrl
     LCtrl::LWin
+    RWin::RCtrl
+    return
 }
 
 
@@ -49,7 +50,6 @@ if (SWAP_CONTROL_COMMAND = "yes") {
 ;  Send Alt-F4 with Command-Q   ;
 ;###############################;
 if (COMMAND_Q_QUIT_APPS = "yes") {
-    ^q::
-        Send ! {F4}
-        return
+    ^q::Send !{F4}
+    return
 }
