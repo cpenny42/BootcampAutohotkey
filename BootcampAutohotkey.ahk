@@ -7,7 +7,6 @@
 ;    List of Features:
 ;        - Inverse Scrolling
 ;        - control & command keys swapped
-;        - Spotlight shortcut remapped to Windows search (Command-Space)
 ;        - Command-Q (remapped to ctrl-q) sends Alt-F4 message to close an app.
 ;
 ;#############################################################################;
@@ -15,7 +14,6 @@
 
     INVERT_SCROLLING     = yes
     SWAP_CONTROL_COMMAND = yes
-    SPOTLIGHT_SHORTCUT   = yes
     COMMAND_Q_QUIT_APPS  = yes
 
 ;#############################################################################;
@@ -41,19 +39,9 @@ if (INVERT_SCROLLING = "yes") {
 ;  Swap Control & Command keys  ;
 ;###############################;
 if (SWAP_CONTROL_COMMAND = "yes") {
-    LWin ::LCtrl
+    LWin::LCtrl
+    RWin::RCtrl
     LCtrl::LWin
-    RWin ::RCtrl
-}
-
-
-;###################################################;
-;  Open search with Command-Space (like Spotlight)  ;
-;###################################################;
-if (SPOTLIGHT_SHORTCUT = "yes") {
-    ^Space:: 
-        Send # {s}
-        return
 }
 
 
